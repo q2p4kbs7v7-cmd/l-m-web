@@ -1,21 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>L&M Tesařství & Truhlářství</title>
-  <meta name="description" content="Poctivé dřevo. Přesná práce. Stoly, kuchyně, pergoly, střechy a podbití — L&M Tesařství & Truhlářství."/>
-  <link rel="icon" href="logo.svg" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Poctivé dřevo. Nábytek na míru, pergoly a přístřešky, střechy a podbití. Staré Heřmínovy a okolí." />
+  <link rel="preload" href="assets/img/IMG_9092.JPG" as="image">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header-bar">
+  <header class="site-header">
+    <div class="container header-inner">
       <div class="brand">
-        <img src="logo.svg" alt="L&M logo">
-        <span>L&M Tesařství & Truhlářství</span>
+        <svg viewBox="0 0 100 100" class="logo" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#E2AD73" />
+              <stop offset="100%" stop-color="#9C7B5A" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#g)" d="M50 12 18 44l4 4 10-10v36l7 7V63h12v18l7-7V38l10 10 4-4L50 12Zm6 44H44V37l12-12v31Z"/>
+        </svg>
+        <span>L&amp;M Tesařství &amp; Truhlářství</span>
       </div>
-      <nav class="nav">
+      <nav>
         <a href="#sluzby">Služby</a>
         <a href="#realizace">Realizace</a>
         <a href="#onas">O nás</a>
@@ -26,108 +34,94 @@
 
   <main>
     <section class="hero">
-      <div class="bg" style="background-image:url('hero.jpg')"></div>
-      <div class="container inner">
-        <h1>L&M Tesařství & Truhlářství</h1>
-        <p class="lead">Poctivé dřevo. Přesná práce. Výsledek, který vydrží. Stoly a nábytek na míru, pergoly a přístřešky, střechy a podbití.</p>
-        <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap">
-          <a class="cta" href="#kontakt">📩 Nezávazná poptávka</a>
-          <a class="btn" href="tel:+420702212472">📞 Zavolat: 702 212 472</a>
+      <div class="hero-bg" style="background-image:url('assets/img/IMG_9092.JPG')"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <h1>L&amp;M Tesařství &amp; Truhlářství</h1>
+        <p>Poctivé dřevo. Přesná práce. Výsledek, který vydrží. Stoly a nábytek na míru, pergoly a přístřešky, střechy a podbití.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">📩 Nezávazná poptávka</a>
+          <a href="tel:+420702212472" class="btn btn-ghost">📞 702&nbsp;212&nbsp;472</a>
         </div>
       </div>
     </section>
 
     <section id="sluzby" class="section">
       <div class="container">
-        <h2><img src="logo.svg" alt="" style="width:22px;height:22px;border-radius:6px"> Služby</h2>
-        <p class="lead" style="margin-bottom:14px">Navrhujeme, vyrábíme a montujeme. Vždy na míru a poctivě. Materiály volíme s ohledem na životnost a vzhled.</p>
-        <div class="cards">
-          <div class="card"><div style="color:var(--accent)">▣</div><h3>Nábytek na míru</h3><p>Masivní stoly, kuchyňské a koupelnové desky, vestavby. Precizní truhlářina od návrhu po montáž.</p></div>
-          <div class="card"><div style="color:var(--accent)">▣</div><h3>Pergoly a přístřešky</h3><p>Poctivé konstrukce z KVH/BSH, statika a kotvení na jistotu, povrch v přírodních odstínech.</p></div>
-          <div class="card"><div style="color:var(--accent)">▣</div><h3>Střechy</h3><p>Krovy, laťování, krytina. Od přípravy po poslední šroub – bezpečně a přesně.</p></div>
-          <div class="card"><div style="color:var(--accent)">▣</div><h3>Podbití a obklady</h3><p>OSB + nátěr, palubky i PVC. Rovné linie, čisté detaily a dlouhá výdrž.</p></div>
+        <h2>Služby</h2>
+        <div class="grid-4">
+          <div class="card">
+            <h3>Nábytek na míru</h3>
+            <p>Masivní stoly, kuchyňské a koupelnové desky, vestavby. Precizní truhlářina od návrhu po montáž.</p>
+          </div>
+          <div class="card">
+            <h3>Pergoly a přístřešky</h3>
+            <p>Konstrukce z KVH/BSH, statika a kotvení na jistotu, povrch v přírodních odstínech.</p>
+          </div>
+          <div class="card">
+            <h3>Střechy</h3>
+            <p>Krovy, laťování, krytina. Od přípravy po poslední šroub – bezpečně a přesně.</p>
+          </div>
+          <div class="card">
+            <h3>Podbití a obklady</h3>
+            <p>OSB + nátěr, palubky i PVC. Rovné linie, čisté detaily a dlouhá výdrž.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="realizace" class="section">
       <div class="container">
-        <h2><img src="logo.svg" alt="" style="width:22px;height:22px;border-radius:6px"> Vybrané realizace</h2>
-        <div class="gallery">
-          <button class="thumb" data-open data-src="images/gal-1.jpg" data-title="Kuchyně – rekonstrukce" data-place="Horní Benešov">
-            <img src="images/gal-1.jpg" alt="Kuchyně — rekonstrukce" onerror="this.src='images/placeholder.png'">
-            <div class="cap"><strong>Kuchyně – rekonstrukce</strong><br><span class="small">Horní Benešov</span></div>
-          </button>
-          <button class="thumb" data-open data-src="images/gal-2.jpg" data-title="Masivní jasan — koupelnová deska" data-place="Staré Heřmínovy">
-            <img src="images/gal-2.jpg" alt="Masivní jasan — koupelnová deska" onerror="this.src='images/placeholder.png'">
-            <div class="cap"><strong>Masivní jasan — koupelnová deska</strong><br><span class="small">Staré Heřmínovy</span></div>
-          </button>
-          <button class="thumb" data-open data-src="images/gal-3.jpg" data-title="Pergola / přístřešek" data-place="Horní Benešov">
-            <img src="images/gal-3.jpg" alt="Pergola / přístřešek" onerror="this.src='images/placeholder.png'">
-            <div class="cap"><strong>Pergola / přístřešek</strong><br><span class="small">Horní Benešov</span></div>
-          </button>
-          <button class="thumb" data-open data-src="images/gal-4.jpg" data-title="Podbití střechy" data-place="Opava">
-            <img src="images/gal-4.jpg" alt="Podbití střechy" onerror="this.src='images/placeholder.png'">
-            <div class="cap"><strong>Podbití střechy</strong><br><span class="small">Opava</span></div>
-          </button>
+        <h2>Vybrané realizace</h2>
+        <div class="grid-2 gallery">
+          <figure>
+            <img src="assets/img/IMG_9092.JPG" alt="Kuchyně – Horní Benešov">
+            <figcaption>Kuchyně – Horní Benešov</figcaption>
+          </figure>
+          <figure><img src="assets/img/6fd68100-5e74-4292-940b-08cf681f0f94.jpeg" alt="Realizace"><figcaption>Realizace</figcaption></figure><figure><img src="assets/img/a6ce6955-1b7c-49b2-88b1-b92318caf8c5.jpeg" alt="Realizace"><figcaption>Realizace</figcaption></figure><figure><img src="assets/img/e9861542-b92d-44a7-b45b-d07defb7d876.jpeg" alt="Realizace"><figcaption>Realizace</figcaption></figure><figure><img src="assets/img/13c9c7da-5ee2-4079-8e1b-53b102c22dce.jpeg" alt="Realizace"><figcaption>Realizace</figcaption></figure><figure><img src="assets/img/IMG_4549.jpeg" alt="Realizace"><figcaption>Realizace</figcaption></figure>
         </div>
-        <p class="small" style="margin-top:8px">*V ostré verzi zde budou vaše reálné fotografie (Zakázka 1–4) v jednotném formátu.*</p>
+        <p class="note">*V ostré verzi můžeme doplnit další fotky a texty k zakázkám 1–4.*</p>
       </div>
     </section>
 
     <section id="onas" class="section">
       <div class="container about">
-        <h2><img src="logo.svg" alt="" style="width:22px;height:22px;border-radius:6px"> O nás</h2>
-        <div class="cards">
-          <div class="card"><p>Děláme věci tak, jak bychom je dělali u sebe doma. Masiv, přesnost, férové jednání. Každý kus dřeva má svůj příběh – my mu dáme nový život.</p></div>
-          <div class="card"><p>„Tyvole, tohle chci taky.“ – to je reakce, kterou chceme vyvolat. Fotkami poctivé práce a čistými detaily.</p></div>
-        </div>
+        <p>Děláme věci tak, jak bychom je dělali u sebe doma. Masiv, přesnost, férové jednání. Každý kus dřeva má svůj příběh – my mu dáme nový život.</p>
+        <blockquote>„Tyvole, tohle chci taky.“</blockquote>
       </div>
     </section>
 
     <section id="kontakt" class="section">
       <div class="container contact">
         <div>
-          <h2><img src="logo.svg" alt="" style="width:22px;height:22px;border-radius:6px"> Kontakt</h2>
-          <p class="lead">📍 Staré Heřmínovy 18 (Opavsko a okolí)</p>
+          <h2>Kontakt</h2>
+          <p><strong>L&amp;M Tesařství &amp; Truhlářství</strong></p>
+          <p>📍 Staré Heřmínovy 18 (Opavsko a okolí)</p>
           <p>📞 Jaroslav Meinhold — <a href="tel:+420702212472">702 212 472</a></p>
           <p>📞 Aleš Legerský — <a href="tel:+420774998560">774 998 560</a></p>
           <p>✉️ <a href="mailto:tesarilm@seznam.cz">tesarilm@seznam.cz</a></p>
         </div>
-        <form class="form" onsubmit="event.preventDefault(); alert('Díky! V ostré verzi napojíme odeslání na e‑mail.');">
-          <div><label class="small">Jméno a příjmení</label><input class="input" placeholder="Jan Novák"/></div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-            <div><label class="small">Telefon</label><input class="input" placeholder="702 000 000"/></div>
-            <div><label class="small">E‑mail</label><input class="input" placeholder="email@domena.cz"/></div>
+        <form class="form" onsubmit="return false;">
+          <label>Jméno a příjmení<input required placeholder="Jan Novák"></label>
+          <div class="two">
+            <label>Telefon<input required placeholder="702 000 000"></label>
+            <label>E-mail<input type="email" placeholder="email@domena.cz"></label>
           </div>
-          <div><label class="small">Popište svou poptávku</label><textarea rows="4" class="input" placeholder="Co potřebujete vyrobit / kde se bude montovat…"></textarea></div>
-          <button class="cta" type="submit">Odeslat poptávku</button>
-          <p class="small">Odesláním souhlasíte se zpracováním kontaktních údajů za účelem vyřízení poptávky.</p>
+          <label>Popište svou poptávku<textarea rows="4" placeholder="Co potřebujete vyrobit / kde se bude montovat…"></textarea></label>
+          <button class="btn btn-primary" type="submit">Odeslat poptávku</button>
+          <small class="note">Odesláním souhlasíte se zpracováním kontaktních údajů za účelem vyřízení poptávky.</small>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-      <div style="display:flex;align-items:center;gap:8px">
-        <img src="logo.svg" alt="" style="width:18px;height:18px;border-radius:5px">
-        <span>© <span id="year"></span> L&M Tesařství & Truhlářství — poctivá práce ze dřeva</span>
-      </div>
-      <a href="#" class="toplink">Nahoru ↑</a>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2025 L&amp;M Tesařství &amp; Truhlářství — poctivá práce ze dřeva</span>
+      <a href="#top">Nahoru ↑</a>
     </div>
   </footer>
 
-  <div class="lightbox">
-    <div style="max-width:1000px;width:100%">
-      <img src="images/placeholder.png" alt="náhled">
-      <div class="meta">
-        <div><strong class="title">Název</strong> — <span class="place">Místo</span></div>
-        <button class="close" data-close>Zavřít</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
